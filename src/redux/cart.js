@@ -11,34 +11,25 @@ const create_Slice = createSlice({
     name:"cart",
     initialState:INITIAL_STATE,
     reducers:{
-        addToCart:()=>{
-            
+        addToCart:(state)=>{
+            state.cartCount=1;
         },
-        increment:()=>{},
-        decrement:()=>{},
+        increment:(state)=> {
+            state.cartCount +=1;
+        },
+        decrement:(state)=>{
+            state.cartCount -=1;
+        },
 
     }
 });
 
+export const {increment,decrement,addtoCart} =createSlice.actions;
+
+export default createSlice.reducers;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
