@@ -5,8 +5,6 @@ const INITIAL_STATE={
     cartList:[],
     cartCount:0,
 }
-
-
 const create_Slice = createSlice({
     name:"cart",
     initialState:INITIAL_STATE,
